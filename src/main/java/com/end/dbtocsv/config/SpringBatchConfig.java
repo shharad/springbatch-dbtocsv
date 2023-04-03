@@ -44,7 +44,7 @@ public class SpringBatchConfig {
     private final PlatformTransactionManager transactionManager;
 
     @Autowired
-    private final AppProperties appProperties = new AppProperties();
+    private final AppProperties appProperties;
 
     @Autowired
     RssServiceProcessor rssServiceProcessor;
