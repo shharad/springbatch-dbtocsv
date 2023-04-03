@@ -43,11 +43,7 @@ public class SpringBatchConfig {
     private final JobRepository jobRepository;
     private final PlatformTransactionManager transactionManager;
 
-    @Autowired
     private final AppProperties appProperties;
-
-    @Autowired
-    RssServiceProcessor rssServiceProcessor;
 
     private final String[] headers = new String[]{"serviceId", "serviceName", "serviceType", "sourceSystem", "status", "remark", "createdBy", "createdOn", "modifiedBy", "modifiedOn"};
 
